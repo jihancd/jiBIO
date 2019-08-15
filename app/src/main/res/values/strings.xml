@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">jiBIO</string>
+
+    <string name="biodata">Biodata</string>
+    <string name="kontak">Kontak</string>
+    <string name="teman">Teman</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.OnboardActivity"
+    android:background="@color/colorPrimary">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_onboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vp_onboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:text="Done"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
